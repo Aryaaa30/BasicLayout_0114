@@ -29,7 +29,10 @@ class WeatherScreen extends StatelessWidget {
         elevation: 0,
         actions: [
           IconButton(
-            icon: const Icon(Icons.add, color: Colors.black), // Ikon tambah
+            icon: const Icon(
+              Icons.add,
+              color: Colors.black,
+            ), // Ini untuk ikon tambah
             onPressed: () {
               ScaffoldMessenger.of(
                 context,
@@ -38,7 +41,7 @@ class WeatherScreen extends StatelessWidget {
           ),
         ],
       ),
-      drawer: const Drawer(), // Untuk icon menu di kiri atas
+      drawer: const Drawer(), // Ini untuk icon menu di kiri atas
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 20),
         child: Column(
@@ -65,7 +68,7 @@ class WeatherScreen extends StatelessWidget {
             ),
             const SizedBox(height: 20),
             const SizedBox(
-              width: 300, // Atur panjang divider di sini
+              width: 300, // Untuk mengatur panjang garisnya
               child: Divider(thickness: 2),
             ),
             const SizedBox(height: 10),
